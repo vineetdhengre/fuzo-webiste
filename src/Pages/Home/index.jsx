@@ -17,7 +17,7 @@ function Home() {
                             <div className="image-container">
                                 <img src="assets/image-two.jpg" className="food-image img-fluid" alt="Delicious Platter" />
                                 <div className="overlay-text">
-                                    <h2 className="font-weight-bold custom-font" style={{ fontSize: "4rem" }} >FUEL UP YOUR DAY WITH OUR PLATTER!</h2>
+                                    <h2 className="font-weight-bold custom-font" style={{ fontSize: "4rem" }} >FUEL UP  DAY WITH OUR PLATTER!</h2>
                                     <a href="#" className="order-btn mt-3 d-inline-block fs-4">ORDER FUZO →</a>
                                 </div>
                             </div>
