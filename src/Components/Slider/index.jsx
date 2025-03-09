@@ -17,7 +17,7 @@ function Slider() {
                     </div>
 
                     <div className="icon-box mt-3 justify-content-center" style={{ textAlign: "left", width: "40%" }}>
-                        <img src="src\assets\icons\boiling.png" alt="" />
+                        <img src="assets\icons\boiling.png" alt="" />
                         <p><b>FUZO</b> offers essential nutrients from 30 major ingredients, including avocado, sesame, capsicum, vegetables, and fruits.</p>
                     </div>
 
@@ -106,7 +106,7 @@ function Slider() {
 
             <div>
                 <div className="container-fluid ">
-                <img src="src\assets\bowl-test.png" alt="Bowl" class="bowl-top-left" />
+                <img src="assets\bowl-test.png" alt="Bowl" class="bowl-top-left" />
                     <div className="hero-section-bottom">
                         <div className="tag">Fresh Choices</div>
                         <h1 className="title">Meet the high nutrition plates.</h1>

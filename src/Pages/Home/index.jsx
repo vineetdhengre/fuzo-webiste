@@ -10,12 +10,12 @@ function Home() {
                     <div className="row align-items-center">
 
                         <div className="col-md-6 text-center">
-                            <img src="src\assets\image-one.jpg" className="food-image" alt="Delicious Platter" />
+                            <img src="assets\image-one.jpg" className="food-image" alt="Delicious Platter" />
                         </div>
 
                         <div className="col-md-6 text-left position-relative">
                             <div className="image-container">
-                                <img src="src/assets/image-two.jpg" className="food-image img-fluid" alt="Delicious Platter" />
+                                <img src="assets/image-two.jpg" className="food-image img-fluid" alt="Delicious Platter" />
                                 <div className="overlay-text">
                                     <h2 className="font-weight-bold custom-font" style={{ fontSize: "4rem" }} >FUEL UP YOUR DAY WITH OUR PLATTER!</h2>
                                     <a href="#" className="order-btn mt-3 d-inline-block fs-4">ORDER FUZO →</a>
@@ -56,7 +56,7 @@ function Home() {
 
 
                         <div className="col-md-6 image-container">
-                            <img src="src\assets\image-three.png" alt="Farm Fresh" />
+                            <img src="assets\image-three.png" alt="Farm Fresh" />
                         </div>
 
 
