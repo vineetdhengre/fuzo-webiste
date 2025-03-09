@@ -1,0 +1,64 @@
+/* Custom Navbar */
+.navbar-custom {
+    background-color: #FFD700; /* Yellow background */
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    color: #3D2601;
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: black !important;
+    text-transform: uppercase;
+}
+
+/* Order Now Button */
+.order-btn {
+    border: 2px solid black;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.order-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .order-btn {
+        margin-top: 10px;
+    }
+}
