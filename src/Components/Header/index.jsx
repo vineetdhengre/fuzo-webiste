@@ -7,8 +7,17 @@ const Header = () => {
         <>
             <div className='headerWrapper'>
                 <div className='top-strip bg-pink'>
-                    <div className='container-fluid'>
-                        <p className="p-2 mb-0 text-white font-weight-light text-center "> <marquee direction="right"> Grab the Offer - Buy 2 and Get 1 FREE!!</marquee> </p>
+                    <div className='container pt-3 pb-3'>
+                        <div className='row'>
+                        <div className='col-md-9'>
+                            <p className="p-2 mb-0 text-white font-weight-light text-center "> <marquee direction="right"> Grab the Offer - Buy 2 and Get 1 FREE!!</marquee> </p>
+                        </div>
+                        <div className='col-md-3 text-right'  >
+                            <a class="btn order-btn" href="#">ORDER NOW</a>
+                        </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -29,9 +38,9 @@ const Header = () => {
                             {/* <!-- Left Side Menu --> */}
                             <div class="col-lg-5 text-left">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item"><a class="nav-link" href="#">INGREDIENTS</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">NUTRITIONS</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">PRODUCTS</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">PRODUCT</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">WHY US</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">DELIVERY</a></li>
                                 </ul>
                             </div>
@@ -45,11 +54,12 @@ const Header = () => {
                             <div class="col-lg-5 text-right">
                                 <ul class="navbar-nav">
                                     <li class="nav-item"><a class="nav-link" href="#">RECIPES</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">WHY US?</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">OFFERS</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">CONTACT FUZO</a></li>
                                     <li class="nav-item">
-                                        <a class="btn order-btn" href="#">ORDER NOW</a>
+                                        <a class="btn order-btn" href="#">SIGN IN/UP</a>
                                     </li>
+                                    {/* <li class="nav-item"><a class="nav-link" href="#">SIGN IN/UP</a></li> */}
                                 </ul>
                             </div>
                         </div>

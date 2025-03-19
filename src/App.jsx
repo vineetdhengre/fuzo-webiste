@@ -12,11 +12,12 @@ function App() {
     <>
       <div>
         <Header/>
-       <BrowserRouter>
-        <Routes>
-          <Route path="/"  element={<Home/>}/>
-        </Routes>
-       </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/"  element={<Home/>}/>
+          </Routes>
+        </BrowserRouter>
+        
       </div>
     </>
   )

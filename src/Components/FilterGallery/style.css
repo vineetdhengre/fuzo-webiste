@@ -1,0 +1,28 @@
+.categories {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+     background-color: #bb6363;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+  
+  .categories .active {
+    color: #492e2e;
+    text-decoration: underline;
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .gallery img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  

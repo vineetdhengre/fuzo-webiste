@@ -9,11 +9,19 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
-.custom-font{
+.custom-font-Madimi{
   font-family: "Madimi One", cursive;
 }
 
 .bg-pink{
   background-color: #bf55bf;
+}
+
+
+.body-customHeading{
+  font-family: 'Teko', sans-serif;
+  margin: auto;
+  width: 70%;
+  text-align: center;
 }
 

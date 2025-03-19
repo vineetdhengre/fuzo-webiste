@@ -63,13 +63,6 @@
 /* 
 code belongs to below hero sections */
 
-.body-customHeading{
-    font-family: 'Teko', sans-serif;
-    margin: auto;
-    width: 70%;
-    text-align: center;
-}
-
 .hero-section {
     background-color: #fdefe0;
     padding: 50px;

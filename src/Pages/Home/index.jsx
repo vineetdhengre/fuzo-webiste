@@ -1,11 +1,13 @@
 import { React } from "react"
 import "./index.css"
 import Slider from "../../Components/Slider"
+import FilterGallery from "../../Components/FilterGallery"
 
 function Home() {
     return (
         <>
             <div className="main-body">
+
                 <section className="container-fluid food-section">
                     <div className="row align-items-center">
 
@@ -78,6 +80,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
+                <FilterGallery/>
 
                 <Slider/>
 
