@@ -31,30 +31,30 @@ export default function CardSlider() {
                             <div className="row justify-content-center">
                                 <div className="col-md-2 slider-item">
                                     <div className="card">
-                                        <img src="public\assets\idli_mix_one.png" alt="Onion" />
+                                        <img src="assets\idli_mix_one.png" alt="Idli" />
                                     </div>
                                 </div>
                                 <div className="col-md-2 slider-item">
                                     <div className="card">
-                                        <img src="public\assets\moong_dal_one.png" alt="Avocado" />
+                                        <img src="assets\moong_dal_one.png" alt="Moong Dal" />
 
                                     </div>
                                 </div>
                                 <div className="col-md-2 slider-item">
                                     <div className="card">
-                                        <img src="public\assets\multigrain_dhokla_calcium_one.png" alt="Carrot" />
+                                        <img src="assets\multigrain_dhokla_calcium_one.png" alt="Dhokla" />
 
                                     </div>
                                 </div>
                                 <div className="col-md-2 slider-item">
                                     <div className="card">
-                                        <img src="public\assets\multigrain_dhokla_protien_one.png" alt="Mushroom" />
+                                        <img src="assets\multigrain_dhokla_protien_one.png" alt="Dhokla protein" />
 
                                     </div>
                                 </div>
                                 <div className="col-md-2 slider-item">
                                     <div className="card">
-                                        <img src="public\assets\oats_idli_mix_one.png" alt="Maize" />
+                                        <img src="assets\oats_idli_mix_one.png" alt="Oats Idli" />
 
                                     </div>
                                 </div>
