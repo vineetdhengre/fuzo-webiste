@@ -60,7 +60,7 @@ export default function CardSlider() {
                                 </div>
                             </div>
                         </div>
-                        <div className="carousel-item">
+                        {/* <div className="carousel-item">
                             <div className="row justify-content-center">
                                 <div className="col-md-2 slider-item">
                                     <div className="card">
@@ -93,7 +93,7 @@ export default function CardSlider() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* <button className="carousel-control-prev" type="button" data-bs-target="#vegCarousel" data-bs-slide="prev">
