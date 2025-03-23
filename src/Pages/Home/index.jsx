@@ -1,14 +1,22 @@
 import { React } from "react"
 import "./index.css"
-import Slider from "../../Components/Slider"
-import FilterGallery from "../../Components/FilterGallery"
+import MainSlider from "../../Components/Slider/MainSlider/MainSlider"
+import CardSlider from "../../Components/Slider/CardSlider/CardSlider"
+import { Card } from "@mui/material"
 
 function Home() {
     return (
         <>
+
+            <div>
+                <MainSlider />
+            </div>
+
+
             <div className="main-body">
 
-                <section className="container-fluid food-section">
+                <div>
+                    {/* <section className="container-fluid food-section">
                     <div className="row align-items-center">
 
                         <div className="col-md-6 text-center">
@@ -26,7 +34,9 @@ function Home() {
                         </div>
                     </div>
 
-                </section>
+                </section> */}
+
+                </div>
 
                 <div className="container hero-section">
 
@@ -81,11 +91,11 @@ function Home() {
                     </div>
                 </div>
 
-                <FilterGallery/>
 
-                <Slider/>
+            </div>
 
-
+            <div>
+                <CardSlider />
             </div>
 
         </>
