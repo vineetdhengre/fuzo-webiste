@@ -1,0 +1,59 @@
+.product-hero-section {
+    background-image: url(/assets/product-page.jpg);
+    color: white;
+    padding: 160px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Ensures the wave is positioned at the bottom */
+.wave-container {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+}
+
+.wave {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.plan-header {
+    background: #69a72a;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.buy-now {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.buy-now:hover {
+    background: #C26627;
+}

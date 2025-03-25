@@ -1,6 +1,13 @@
 /* Custom Navbar */
+
+.header-custom {
+    display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+}
+
 .navbar-custom {
-    background-color: #FFD700; /* Yellow background */
     padding: 15px 0;
 }
 
@@ -11,9 +18,14 @@
     text-transform: uppercase;
 }
 
+.navbar-brand img{
+    width: 120px;
+}
+
 .navbar-nav {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .navbar-nav .nav-item {

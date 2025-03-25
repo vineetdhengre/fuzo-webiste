@@ -42,6 +42,12 @@ export default function CardSlider() {
                                 </div>
                                 <div className="col-md-2 slider-item">
                                     <div className="card">
+                                        <img src="assets\multi_millet_dosa_one.png" alt="Moong Dal" />
+
+                                    </div>
+                                </div>
+                                <div className="col-md-2 slider-item">
+                                    <div className="card">
                                         <img src="assets\multigrain_dhokla_calcium_one.png" alt="Dhokla" />
 
                                     </div>
@@ -103,6 +109,11 @@ export default function CardSlider() {
                         <span className="carousel-control-next-icon"></span>
                     </button> */}
                 </div>
+            </div>
+
+            <div>
+
+                
             </div>
 
             <div>
