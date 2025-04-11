@@ -12,7 +12,7 @@ import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import Thankyou from './Pages/Thankyou';
 import ComingSoon from './Pages/ComingSoon/ComingSoon';
-import Contact from './Pages/Contact/contact';
+import Contact from "./Pages/Contact/Contact"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,7 +30,7 @@ function App() {
             <Route path="/delivery" element={<ComingSoon/>} />
             <Route path="/recipes" element={<ComingSoon/>} />
             <Route path="/offers" element={<ComingSoon/>} /> 
-            <Route path="/contact-us" element={<Contact/>} />
+            <Route path="/contactUs" element={<Contact />}/> 
             <Route path="/single-product/:id" element={<singleProduct />} />
             <Route path="*" element={<Error />} />
             <Route path="/thankyou" element={<Thankyou/>} />
