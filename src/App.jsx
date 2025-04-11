@@ -6,13 +6,13 @@ import Home from "./Pages/Home"
 import Header from './Components/Header';
 import Product from "./Pages/Products/Product"
 import About from './Pages/About/About';
-import Contact from './Pages/Contact/contact';
 import singleProduct from './Pages/SingleProduct/singleProduct';
 import Error from './Pages/Error';
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import Thankyou from './Pages/Thankyou';
 import ComingSoon from './Pages/ComingSoon/ComingSoon';
+import Contact from './Pages/Contact/contact';
 
 function App() {
   const [count, setCount] = useState(0)
