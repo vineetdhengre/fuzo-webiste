@@ -27,15 +27,15 @@ export default function MainSlider() {
             return updated;
         });
 
-        setThumbnails((prev) => {
-            let updated = [...prev];
-            if (type === "next") {
-                updated.push(updated.shift());
-            } else {
-                updated.unshift(updated.pop());
-            }
-            return updated;
-        });
+        // setThumbnails((prev) => {
+        //     let updated = [...prev];
+        //     if (type === "next") {
+        //         updated.push(updated.shift());
+        //     } else {
+        //         updated.unshift(updated.pop());
+        //     }
+        //     return updated;
+        // });
 
         if (carouselRef.current) {
             carouselRef.current.classList.add(type);
@@ -84,7 +84,7 @@ export default function MainSlider() {
             </div>
 
             {/* Thumbnail List */}
-            <div className="thumbnail">
+            {/* <div className="thumbnail">
                 {thumbnails.map((thumb, index) => (
                     <div className="item" key={index}>
                         <img src={thumb.img} alt="thumbnail" />
@@ -93,7 +93,7 @@ export default function MainSlider() {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
 
             {/* Navigation */}
             <div className="arrows">

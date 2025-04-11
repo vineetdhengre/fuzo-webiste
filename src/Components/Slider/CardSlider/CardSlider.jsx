@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './card_slider.css';
 import { useState, useCallback } from 'react';
+import { useProductContext  } from '/src/Context/productContext';
 
 export default function CardSlider() {
+
+    const {myName} = useProductContext();
+    console.log(myName)
 
     return (
         <>
@@ -10,15 +14,16 @@ export default function CardSlider() {
 
                 <div className='info-container'>
 
-                    <div style={{ textAlign: "left", width: "60%" }}>
+                    <div style={{ textAlign: "left", width: "65%" }}>
                         <span className="badge-custom">Fresh Delight</span>
                         <h4 className="mt-3 " style={{ fontSize: "2.8rem ", fontWeight: 700 }}>
                             FRESH SUPPLIES <span className="highlight-text">ASSURE</span> SUPERIOR MEALS
                         </h4>
+                        <p> </p>
 
                     </div>
 
-                    <div className="icon-box mt-3 justify-content-center" style={{ textAlign: "left", width: "40%" }}>
+                    <div className="icon-box mt-3 justify-content-center" style={{ textAlign: "left", width: "35%" }}>
                         <img src="assets\icons\boiling.png" alt="" />
                         <p><b>FUZO</b> offers essential nutrients from 30 major ingredients, including avocado, sesame, capsicum, vegetables, and fruits.</p>
                     </div>
@@ -40,30 +45,30 @@ export default function CardSlider() {
 
                                     </div>
                                 </div>
-                                <div className="col-md-2 slider-item">
+                                {/* <div className="col-md-2 slider-item">
                                     <div className="card">
                                         <img src="assets\multi_millet_dosa_one.png" alt="Moong Dal" />
 
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="col-md-2 slider-item">
                                     <div className="card">
                                         <img src="assets\multigrain_dhokla_calcium_one.png" alt="Dhokla" />
 
                                     </div>
                                 </div>
-                                <div className="col-md-2 slider-item">
+                                {/* <div className="col-md-2 slider-item">
                                     <div className="card">
                                         <img src="assets\multigrain_dhokla_protien_one.png" alt="Dhokla protein" />
 
                                     </div>
-                                </div>
-                                <div className="col-md-2 slider-item">
+                                </div> */}
+                                {/* <div className="col-md-2 slider-item">
                                     <div className="card">
                                         <img src="assets\oats_idli_mix_one.png" alt="Oats Idli" />
 
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         {/* <div className="carousel-item">

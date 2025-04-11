@@ -2,7 +2,7 @@ import React from "react"
 import "./product.css"
 
 
-export default function PRODUCT() {
+export default function Product() {
 
     const products = [
         { title: "Idli Mix", image: "/assets/idli_mix_one.png" },

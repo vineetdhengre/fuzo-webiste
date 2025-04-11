@@ -23,7 +23,7 @@ function FilterGallery() {
                         OUR
                         <span className="highlight-text pl-3" style={{ fontSize: "4rem" }} >PRODUCTS</span>
                     </h2>
-                </div>git pu
+                </div>
 
 
                 <div className='row justify-content-center pt-4 pb-4'>

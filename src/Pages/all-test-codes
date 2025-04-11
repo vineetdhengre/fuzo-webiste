@@ -1,0 +1,671 @@
+<!-- <div className="products-mainContainer">
+    <ul>
+        <input type="radio" id="list-1" name="list" defaultValue="list-1" />
+        <li>
+            <label htmlFor="list-1" />
+            <p> Rice Idli Mix </p>
+        </li>
+        <input type="radio" id="list-2" name="list" defaultValue="list-1" />
+        <li>
+            <label htmlFor="list-2" />
+            <p>Moong Daal Dosa Mix </p>
+        </li> 
+        <input
+            type="radio"
+            id="list-3"
+            name="list"
+            defaultValue="list-1"
+            defaultChecked=""
+        />
+        <li>
+            <label htmlFor="list-3" />
+            <p>Multi Millet Dosa Mix</p>
+        </li>
+        <input type="radio" id="list-4" name="list" defaultValue="list-1" />
+        <li>
+            <label htmlFor="list-4" />
+            <p>MultiGrain Dosa Calcium Mix</p>
+        </li>
+        <input type="radio" id="list-5" name="list" defaultValue="list-1" />
+        <li>
+            <label htmlFor="list-5" />
+            <p>MultiGrain Dosa Calcium Mix</p>
+        </li>
+        <input type="radio" id="list-6" name="list" defaultValue="list-1" />
+        <li>
+            <label htmlFor="list-6" />
+            <p>Oats Idli Mix</p>
+        </li>
+    </ul>
+</div>
+
+ <div className="products-mainContainer">
+    <ul>
+    
+        <input type="radio" id="list-1" name="list" defaultValue="list-1" />
+        <li className="product-item">
+            <label htmlFor="list-1" className="product-label" />
+            <div className="product-content">
+                <div className="product-image"></div>
+                <p>Rice Idli Mix</p>
+                <a className="btn order-btn" href="#">ORDER NOW</a>
+            </div>
+        </li>
+
+       
+        <input type="radio" id="list-2" name="list" defaultValue="list-1" />
+        <li className="product-item">
+            <label htmlFor="list-2" className="product-label" />
+            <div className="product-content">
+                <div className="product-image"></div>
+                <p>Moong Daal Dosa Mix</p>
+                <a className="btn order-btn" href="#">ORDER NOW</a>
+            </div>
+        </li>
+
+        <input type="radio" id="list-3" name="list" defaultValue="list-1" />
+        <li className="product-item">
+            <label htmlFor="list-3" className="product-label" />
+            <div className="product-content">
+                <div className="product-image"></div>
+                <p>Multi Millet Dosa Mix</p>
+                <a className="btn order-btn" href="#">ORDER NOW</a>
+            </div>
+        </li>
+
+        <input type="radio" id="list-4" name="list" defaultValue="list-1" />
+        <li className="product-item">
+            <label htmlFor="list-4" className="product-label" />
+            <div className="product-content">
+                <div className="product-image"></div>
+                <p>MultiGrain Dosa Calcium Mix</p>
+                <a className="btn order-btn" href="#">ORDER NOW</a>
+            </div>
+        </li>
+
+        <input type="radio" id="list-5" name="list" defaultValue="list-1" />
+        <li className="product-item">
+            <label htmlFor="list-5" className="product-label" />
+            <div className="product-content">
+                <div className="product-image"></div>
+                <p>MultiGrain Dosa Protein Mix</p>
+                <a className="btn order-btn" href="#">ORDER NOW</a>
+            </div>
+        </li>
+
+        <input type="radio" id="list-6" name="list" defaultValue="list-1" />
+        <li className="product-item">
+            <label htmlFor="list-6" className="product-label" />
+            <div className="product-content">
+                <div className="product-image"></div>
+                <p>Oats Idli Mix</p>
+                <a className="btn order-btn" href="#">ORDER NOW</a>
+            </div>
+        </li>
+    </ul>
+</div>  -->
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+      {/* <!-- Navbar Toggler Button --> */}
+      {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button> */}
+
+      {/* <!-- Center Logo --> */}
+      {/* <a class="navbar-brand mx-auto d-lg-none" href="#" src="/assets/logo.png"></a> */}
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="row w-100 header-custom">
+              {/* <!-- Left Side Menu --> */}
+              <div class="col-lg-5 ">
+                  <ul class="navbar-nav">
+                      <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/product">PRODUCT</a></li>
+                      <li class="nav-item"><a class="nav-link" href="about-us">WHY US</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/">DELIVERY</a></li>
+                  </ul>
+              </div>
+
+              {/* <!-- Center Logo for Large Screens --> */}
+              <div class="col-lg-2  d-none d-lg-block text-center">
+                  <a class="navbar-brand " href="/">
+                      <img src="/assets/logo.png" alt="Logo" class="logo-img"/>
+                  </a>
+              </div>
+
+              {/* <!-- Right Side Menu --> */}
+              <div class="col-lg-5 ">
+                  <ul class="navbar-nav">
+                      <li class="nav-item"><a class="nav-link" href="/">RECIPES</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/">OFFERS</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/contact-us">CONTACT FUZO</a></li>
+                      <li class="nav-item">
+                          <a class="btn order-btn" href="#">SIGN IN/UP</a>
+                      </li>
+                      {/* <li class="nav-item"><a class="nav-link" href="#">SIGN IN/UP</a></li> */}
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>
+
+
+
+<!-- CSSS CODES for product -  -->
+
+
+  
+body{
+    /* font-family: "Poppins", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 12pt;
+    font-weight: 400;
+    color: black;
+    background: black; */
+  }
+  
+  /* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body > .products-mainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      30deg,
+      #000000,
+      #0e0e0e,
+      #181818,
+      #202020,
+      #292929,
+      #313131,
+      #3b3b3b,
+      #444444,
+      #4d4d4d,
+      #575757,
+      #616161,
+      #6b6b6b
+    );
+  }
+   */
+
+
+
+  .products-mainContainer > ul {
+    position: relative;
+    left: 70px;
+    list-style: none;
+    padding: 60px 0px;
+    margin: 0;
+    /* border-left: 10px; */
+    padding-left: 50px;
+    margin-left: 4rem;
+    width: 500px;
+
+    
+
+    /* position: relative;
+    left: 70px;
+    list-style: none;
+    padding: 20px 0px;
+    margin: 0;
+    border-left: 60px solid MediumSpringGreen;
+    padding-left: 40px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 0px inset,
+      rgba(0, 0, 0, 0.3) 0px 3px 0px inset; */
+  }
+  
+  .products-mainContainer > ul > li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100px;
+    text-transform: uppercase;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(2) {
+    --itemcolor: #568A27;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(4) {
+    --itemcolor: #7B6E0A;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(6) {
+    --itemcolor: #B75821;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(8) {
+    --itemcolor: #BF675B;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(10) {
+    --itemcolor: #CB8A34;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(12) {
+    --itemcolor: #A98E18;
+  }
+  
+  .products-mainContainer > ul > li::before {
+    content: "";
+    position: absolute;
+    left: -75px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #f5dcdc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px;
+    border-style: double dotted solid dashed;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  
+  .products-mainContainer > ul > li::after {
+    color: var(--itemcolor);
+    position: absolute;
+    left: -75px;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    content: "#1";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(2)::before {
+    border-color: var(--itemcolor);
+    color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(4)::before {
+    border-color: var(--itemcolor);
+    color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(4)::after {
+    content: "#2";
+    color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(6)::before {
+    border-color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(6)::after {
+    content: "#3";
+    color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(8)::before {
+    border-color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(8)::after {
+    content: "#4";
+    color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(10)::before {
+    border-color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(10)::after {
+    content: "#5";
+    color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(12)::before {
+    border-color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:nth-child(12)::after {
+    content: "#6";
+    color: var(--itemcolor);
+  }
+  
+  .products-mainContainer > ul > li:hover::before {
+    background: var(--itemcolor);
+    border-color: black;
+    animation: bulletspin 5s linear infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes bulletspin {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .products-mainContainer > ul > li:hover::after {
+    color: white;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(4):hover::after,
+  .products-mainContainer > ul > li:nth-child(6):hover::after,
+  .products-mainContainer > ul > li:nth-child(8):hover::after {
+    color: black;
+  }
+  
+  .products-mainContainer > ul > li > p {
+    position: relative;
+    font-size: 12pt;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .products-mainContainer > ul > li > p::after {
+    position: absolute;
+    background: var(--itemcolor);
+    content: "";
+    bottom: 10px;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .products-mainContainer > ul > li:hover > p::after {
+    left: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .products-mainContainer > ul > li:active > p {
+    transform: scale(0.95);
+  }
+  
+  .products-mainContainer > ul > input {
+    position: absolute;
+    display: none;
+    z-index: 3;
+  }
+  
+  .products-mainContainer > ul > li > label {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    right: 0;
+    z-index: 4;
+  }
+  
+  .products-mainContainer > ul > li > label::before {
+
+    position: absolute;
+    content: "";
+    top: -70px;
+    right: -50%;
+    width: 200px;
+    min-height: 200px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11pt;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -2px 0px inset;
+    transition: all 0.3s ease-in-out;
+
+
+    /* position: absolute;
+    content: "";
+    top: -70px;
+    right: -50%;
+    width: 200px;
+    min-height: 200px;
+    padding: 30px 20px;
+    background: var(--itemcolor);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 11pt;
+    text-align: center;
+    text-transform: none;
+    line-height: 16pt;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+    transition: all 0.3s ease-in-out; */
+  }
+  
+  .products-mainContainer > ul > li:nth-child(2) > label::before {
+    content: "";
+    background-image: url('assets/idli_mix_one.png'); 
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  
+  .products-mainContainer > ul > li:nth-child(4) > label::before {
+    content: "";
+    background-image: url('assets/moong_dal_one.png'); 
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(6) > label::before {
+    content: "";
+    background-image: url('assets/multi_millet_dosa_one.png'); 
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  
+  .products-mainContainer > ul > li:nth-child(8) > label::before {
+    content: "";
+    background-image: url('assets/multigrain_dhokla_calcium_one.png'); 
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(10) > label::before {
+    top: -120px;
+    content: "";
+    background-image: url('assets/multigrain_dhokla_protien_one.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .products-mainContainer > ul > li:nth-child(12) > label::before {
+    top: unset;
+    bottom: 0;
+    content: "";
+    background-image: url('assets/oats_idli_mix_one.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .products-mainContainer > ul > li > label::after {
+    position: absolute;
+    top: 20%;
+    left: -20%;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 30px solid var(--itemcolor);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  .products-mainContainer > ul > li > label:hover {
+    cursor: pointer;
+  }
+  
+  .products-mainContainer > ul > input:checked + li > label::before,
+  .products-mainContainer > ul > input:checked + li > label::after {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* .products-mainContainer > ul > input:checked + li > label::before {
+    left: -64%;
+  } */
+  
+  .products-mainContainer > ul > input:checked + li > label::after {
+    left: -12%;
+    transform: scale(1);
+  }
+  
+  .products-mainContainer > ul > input:checked + li > p {
+    color: var(--itemcolor);
+    font-weight: 700;
+    font-size: 14pt;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  /* Make Responsive */
+  
+  @media (max-width: 990px) {
+    /* body {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+    } */
+  
+    .products-mainContainer {
+      min-height: 100vh;
+      padding: 20px 0px;
+    }
+  
+    .products-mainContainer > ul {
+      left: 20px;
+      align-self: flex-start;
+    }
+  
+    .products-mainContainer > ul > li > label::before {
+      width: 300px;
+      left: 100%;
+      top: 100% !important;
+    }
+  
+    .products-mainContainer > ul > li > label::after {
+      left: 0;
+      top: 230%;
+    }
+  
+    .products-mainContainer > ul > input:checked + li {
+      margin-bottom: 220px;
+    }
+  
+    .products-mainContainer > ul > input:checked + li > label::before {
+      left: 21%;
+    }
+  
+    .products-mainContainer > ul > input:checked + li > label::after {
+      left: 12%;
+      top: 230%;
+    }
+  }
+  
+  @media (max-width: 630px) {
+    .products-mainContainer > ul > li {
+      height: 70px;
+    }
+    .products-mainContainer > ul > li > p {
+      font-size: 11pt;
+    }
+    .products-mainContainer > ul > input:checked + li > p {
+      font-size: 12pt;
+    }
+    .products-mainContainer > ul > li > label::before {
+      padding: 20px;
+      left: 10% !important;
+    }
+    .products-mainContainer > ul > li > label::after {
+      left: 0 !important;
+      filter: drop-shadow(1px 1px 2px black);
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .products-mainContainer > ul {
+      width: 320px;
+    }
+    .products-mainContainer > ul > li {
+      white-space: normal !important;
+    }
+    .products-mainContainer > ul > li > p {
+      white-space: normal !important;
+      line-height: 11pt;
+    }
+    .products-mainContainer > ul > li > label::before {
+      padding: 20px;
+      left: -10% !important;
+    }
+    .products-mainContainer > ul > li > label::after {
+      left: -16% !important;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .products-mainContainer > ul {
+      width: 290px;
+    }
+    .products-mainContainer > ul > li > label::before {
+      width: 230px;
+      min-height: 260px;
+    }
+    .products-mainContainer > ul > input:checked + li {
+      margin-bottom: 270px;
+    }
+  }
+  
