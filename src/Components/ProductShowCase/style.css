@@ -1,0 +1,49 @@
+.image-fade-enter {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  
+  .image-fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .thumbnail-hover:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2) !important;
+  }
+  
+  .smooth-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 1) !important;
+  }
+  
+  .description-transition {
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .chevron-rotate {
+    transition: transform 0.2s ease;
+  }
+  
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+  
+  .loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Default value; dynamic changes should be handled in JavaScript */
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }

@@ -6,9 +6,9 @@ import { CiShoppingCart } from "react-icons/ci";
 const Header = () => {
     return (
         <>
-            <div className='headerWrapper'>
-                <div className='top-strip bg-pink'>
-                    <div className='container pt-3 pb-3'>
+            <div className='headerWrapper bg-pink'>
+                
+                    <div className='container pt-3 pb-1'>
                         <div className='row'>
                         <div className='col-md-9'>
                             <p className="p-2 mb-0 text-white font-weight-light text-center "> <marquee direction="right"> Grab the Offer - Buy 2 and Get 1 FREE!!</marquee> </p>
@@ -22,7 +22,7 @@ const Header = () => {
                         
                         
                     </div>
-                </div>
+             
             </div>
 
             <nav class="navbar navbar-expand-lg navbar-custom">

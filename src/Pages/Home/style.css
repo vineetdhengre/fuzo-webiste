@@ -1,0 +1,221 @@
+.main-body{
+    background-color: #FDF5E6;
+}
+
+.food-section {
+    padding: 10px 0;
+}
+.food-image {
+    width: 100%;
+    border-radius: 10px;
+}
+.order-btn {
+    background-color: #ff5722;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.order-btn:hover {
+    background-color: #e64a19;
+    color: white;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.food-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #202020;
+    width: 80%;
+}
+
+.order-btn {
+    background-color: #ff5722;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.order-btn:hover {
+    background-color: #e64a19;
+    color: white;
+}
+
+/* 
+code belongs to below hero sections */
+
+.hero-section {
+    padding: 30px;
+}
+.highlight-text {
+    color: #d15326; 
+    font-weight: bold;
+}
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+.feature {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.feature-icon {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+
+/* card slider code */
+
+.highlight-text {
+    color: #69a72a;
+    font-weight: bold;
+}
+.hero-text {
+    font-weight: bold;
+    color: #5a3011;
+}
+.badge-custom {
+    background-color: #ffc107;
+    color: #5a3011;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.info-container{
+    column-gap: 15%;
+    display: flex;
+    max-width: 1000px;
+    align-content: stretch;
+    margin: auto;
+}
+
+.icon-box {
+    text-align: left;
+}
+.icon-box img {
+    width: 40px;
+    margin: 10px;
+}
+.slider-item {
+    text-align: center;
+    margin: 0 30px;
+}
+.card {
+    /* border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+    background-color: #ffffff00;
+    transition: transform 0.3s;
+    border: none;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    /* width: 80px;
+    height: 80px; */
+    width: 220px;
+    /* margin: auto; */
+}
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgb(232 31 31);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.hero-section-bottom {
+    background-image: url("/assets/batter_gif.gif");
+    background-size: cover;
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+}
+.gif-banner-section{
+    background: rgb(181 173 165 / 50%);
+    padding: 15px 10px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.tag {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6dc34a;
+    color: white;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.card_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a2905;
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: #4a2905;
+    margin-bottom: 2rem;
+}
+.btn-custom {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.btn-orange {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+}
+.btn-orange:hover {
+    background-color: #e64a19;
+}
+.btn-outline {
+    background-color: white;
+    color: black;
+    border: 2px solid #000;
+}
+.btn-outline:hover {
+    background-color: #f1f1f1;
+}
+/* Bowl image on the top left */
+.bowl-top-left {
+    position: relative;
+    top: 70px;
+    left: 80%;
+    width: 150px;
+    height: auto;
+    z-index: 10;
+}
