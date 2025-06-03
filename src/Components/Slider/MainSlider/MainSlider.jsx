@@ -3,10 +3,10 @@ import "./main_slider_style.css";
 
 export default function MainSlider() {
     const [items, setItems] = useState([
-        { img: "assets/main_slider_images/img1.jpeg", title: "IDLI", author: "PREMIXES"  },
-        { img: "assets/main_slider_images/img2.jpg", title: "DOSA", author: "PREMIXES" },
-        { img: "assets/main_slider_images/img3.jpg", title: "OATS", author: "PREMIXES" },
-        { img: "assets/main_slider_images/img4.png", title: "DHOKLA", author: "PREMIXES" },
+        { img: "assets/main_slider_images/img1.png", title: "IDLI", author: "PREMIXES"  },
+        // { img: "assets/main_slider_images/img2.jpg", title: "DOSA", author: "PREMIXES" },
+        // { img: "assets/main_slider_images/img3.jpg", title: "OATS", author: "PREMIXES" },
+        // { img: "assets/main_slider_images/img4.png", title: "DHOKLA", author: "PREMIXES" },
     ]);
 
     const [thumbnails, setThumbnails] = useState([...items]);
@@ -48,7 +48,7 @@ export default function MainSlider() {
 
         clearTimeout(autoSlideRef.current);
         autoSlideRef.current = setTimeout(() => {
-            showSlider("next");
+            showSlider("");
         }, timeAutoNext);
     };
 

@@ -15,20 +15,22 @@ const ProductShowcase = () => {
     price: 599,
     originalPrice: 630,
     images: [
-        "/assets/productShowcase/moongDal-dosa.jpg",
-        "/assets/productShowcase/multigrain-oats.jpg",
-        "/assets/productShowcase/multiMilletDosa.jpg",
-        "/assets/productShowcase/oats-idli.jpg",
-        "/assets/productShowcase/rice-idli.jpg"
-         
-       ],
-       thumbnails: [
-       "/assets/productShowcase/moongDal-dosa.jpg",
-        "/assets/productShowcase/multigrain-oats.jpg",
-        "/assets/productShowcase/multiMilletDosa.jpg",
-        "/assets/productShowcase/oats-idli.jpg",
-        "/assets/productShowcase/rice-idli.jpg"
-       ],
+      "/assets/productShowcase/multiGrain-dosa.jpg",
+      "/assets/productShowcase/moongDal-dosa.jpg",
+      "/assets/productShowcase/multigrain-oats.jpg",
+      "/assets/productShowcase/multiMilletDosa.jpg",
+      "/assets/productShowcase/oats-idli.jpg",
+      "/assets/productShowcase/rice-idli.jpg"
+
+    ],
+    thumbnails: [
+      "/assets/productShowcase/multiGrain-dosa.jpg",
+      "/assets/productShowcase/moongDal-dosa.jpg",
+      "/assets/productShowcase/multigrain-oats.jpg",
+      "/assets/productShowcase/multiMilletDosa.jpg",
+      "/assets/productShowcase/oats-idli.jpg",
+      "/assets/productShowcase/rice-idli.jpg"
+    ],
     sizes: [
       { name: "box-5", label: "Box of 5 Snacks" },
       { name: "box-10", label: "Box of 10 Snacks" }
@@ -38,7 +40,7 @@ const ProductShowcase = () => {
 
   const changeImage = (newIndex) => {
     if (newIndex === selectedImage) return;
-    
+
     setImageLoading(true);
     setTimeout(() => {
       setSelectedImage(newIndex);
@@ -62,12 +64,11 @@ const ProductShowcase = () => {
   // Custom CSS styles for smooth transitions
   const imageContainerStyle = {
     background: 'linear-gradient(135deg, #fed7aa 0%, #fef3c7 100%)',
-    height: '520px',
     overflow: 'hidden'
   };
 
   const imageStyle = {
-    objectFit: 'cover',
+    objectFit: 'contain',
     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
     transform: imageLoading ? 'scale(1.05)' : 'scale(1)',
     opacity: imageLoading ? 0.7 : 1,
@@ -98,7 +99,7 @@ const ProductShowcase = () => {
 
   return (
     <>
-      
+
 
       <section className="py-5">
         <div className="container">
@@ -106,24 +107,24 @@ const ProductShowcase = () => {
             {/* Left Side - Product Images */}
             <div className="col-lg-6 mb-4">
               {/* Main Image with Navigation */}
-              <div 
-                className="position-relative rounded mb-3" 
+              <div
+                className="position-relative rounded mb-3"
                 style={imageContainerStyle}
               >
-                <img 
+                <img
                   src={product.images[selectedImage]}
                   alt={product.title}
                   className="w-100 h-100 rounded"
                   style={imageStyle}
                 />
-                
+
                 {/* Loading overlay */}
                 <div className="loading-overlay">
                   <div className="spinner-border text-primary" role="status">
                     <span className="sr-only">Loading...</span>
                   </div>
                 </div>
-                
+
                 {/* Navigation Arrows */}
                 <button
                   onClick={prevImage}
@@ -155,7 +156,7 @@ const ProductShowcase = () => {
 
 
                 {/* Image indicator dots */}
-                <div 
+                <div
                   className="position-absolute d-flex justify-content-center w-100"
                   style={{ bottom: '15px' }}
                 >
@@ -184,13 +185,12 @@ const ProductShowcase = () => {
                   <button
                     key={index}
                     onClick={() => changeImage(index)}
-                    className={`btn p-0 flex-shrink-0 thumbnail-hover ${
-                      selectedImage === index ? 'border-primary' : 'border-secondary'
-                    }`}
+                    className={`btn p-0 flex-shrink-0 thumbnail-hover ${selectedImage === index ? 'border-primary' : 'border-secondary'
+                      }`}
                     style={thumbnailStyle(index)}
                     disabled={imageLoading}
                   >
-                    <img 
+                    <img
                       src={thumb}
                       alt={`Product view ${index + 1}`}
                       className="w-100 h-100"
@@ -215,13 +215,13 @@ const ProductShowcase = () => {
                   style={{ textDecoration: 'none', color: '#333' }}
                 >
                   <span className="h5 font-weight-bold mb-0">Description</span>
-                  <ChevronDown 
-                    size={20} 
+                  <ChevronDown
+                    size={20}
                     className={`text-muted chevron-rotate ${showDescription ? 'rotate-180' : ''}`}
                   />
                 </button>
-                
-                <div 
+
+                <div
                   className="description-transition"
                   style={{
                     maxHeight: showDescription ? '200px' : '0px',
@@ -258,12 +258,11 @@ const ProductShowcase = () => {
                     <button
                       key={size.name}
                       onClick={() => setSelectedSize(size.name)}
-                      className={`btn font-weight-medium ${
-                        selectedSize === size.name
+                      className={`btn font-weight-medium ${selectedSize === size.name
                           ? 'btn-dark'
                           : 'btn-outline-secondary'
-                      }`}
-                      style={{ 
+                        }`}
+                      style={{
                         fontSize: '14px',
                         transition: 'all 0.2s ease'
                       }}
@@ -280,7 +279,7 @@ const ProductShowcase = () => {
                 <div className="d-flex align-items-center">
                   <div className="input-group" style={{ width: '140px' }}>
                     <div className="input-group-prepend">
-                      <button 
+                      <button
                         onClick={decrementQuantity}
                         className="btn btn-outline-secondary"
                         type="button"
@@ -289,15 +288,15 @@ const ProductShowcase = () => {
                         <Minus size={16} />
                       </button>
                     </div>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       className="form-control text-center font-weight-medium"
                       value={quantity}
                       readOnly
                       style={{ transition: 'all 0.2s ease' }}
                     />
                     <div className="input-group-append">
-                      <button 
+                      <button
                         onClick={incrementQuantity}
                         className="btn btn-outline-secondary"
                         type="button"
@@ -312,13 +311,13 @@ const ProductShowcase = () => {
 
               {/* Action Buttons */}
               <div className="pt-3">
-                <button 
+                <button
                   className="btn btn-outline-dark btn-lg btn-block mb-3 font-weight-bold"
                   style={{ transition: 'all 0.2s ease' }}
                 >
                   ADD TO CART
                 </button>
-                <button 
+                <button
                   className="btn btn-primary btn-lg btn-block font-weight-bold"
                   style={{ transition: 'all 0.2s ease' }}
                 >
