@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { Heart } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import Home from '../../Pages/Home/Home';
 
-const NewArrivals = () => {
+const NewArrivals = ({isProductPage = false , limit=4}) => {
+  const navigate = useNavigate();
   const [wishlistedItems, setWishlistedItems] = useState([]);
 
   const toggleWishlist = (productId) => {
@@ -21,7 +24,8 @@ const NewArrivals = () => {
       discount: "6% OFF",
       additionalInfo: "Bestsellers",
       image: "/assets/idli_mix_one.png",
-      background: "bg-danger"
+      background: "bg-danger",
+      isPopular: true
     },
     {
       id: 2,
@@ -29,7 +33,8 @@ const NewArrivals = () => {
       price: 299,
       size: "200gm",
       image: "/assets/multigrain_dhokla_calcium_one.png",
-      background: "bg-warning"
+      background: "bg-warning",
+      isPopular: false
     },
     {
       id: 3,
@@ -38,7 +43,8 @@ const NewArrivals = () => {
       
       additionalInfo: "Bestsellers",
       image: "/assets/multigrain_dhokla_protien_one.png",
-      background: "bg-primary"
+      background: "bg-primary",
+      isPopular: false
     },
     {
       id: 4,
@@ -48,22 +54,44 @@ const NewArrivals = () => {
       discount: "16% OFF",
       size: "200gm",
       additionalInfo: "",
-      image: "/assets/oats_idli_mix_one.png",
-      background: "bg-success"
+      image: "/assets/moong_dal_one.png",
+      background: "bg-success",
+      isPopular: true
+    },
+    {
+      id: 5,
+      title: "MOONG DAL DOSA MIX",
+      price: 159,
+      discount: "10% OFF",
+      size: "250gm",
+      image: "/assets/moong_dal_one.png",
+      background: "bg-info",
+      isPopular: true
+    },
+    {
+      id: 6,
+      title: "MULTI MILLET DOSA MIX",
+      price: 179,
+      additionalInfo: "High Fiber",
+      image: "/assets/multi_millet_dosa_one.png",
+      background: "bg-secondary",
+      isPopular: false
+      
     }
   ];
+  const displayedProducts = limit ? products.slice(0, limit) : products;
 
   return (
-    <section className="py-5">
+  <section className={`py-5 ${isProductPage ? "bg-light" : ""}`}>
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-4">
-          <h2 className="font-weight-bold mb-2" style={{fontSize : '2.8rem'}} > NEW ARRIVALS </h2>
+          <h2 className="font-weight-bold mb-2" style={{fontSize : '2.8rem'}} > {isProductPage ? "Explore Our Range" : "New Arrivals"} </h2>
           <div className="mx-auto mb-3" style={{ width: "100px", height: "4px", background: "#ccc" }}></div>
         </div>
         {/* Products Grid */}
         <div className="row">
-          {products.map(product => (
+          {displayedProducts.map(product => (
             <div className="col-lg-3 col-md-6 mb-4" key={product.id}>
               <div className="card border-0 shadow-sm h-100 bg-light">
                 <div
@@ -77,8 +105,15 @@ const NewArrivals = () => {
                 >
                   {/* Discount Badge */}
                   {product.discount &&
-                    <span className="badge badge-warning position-absolute" style={{ left: 12, top: 12, zIndex: 3 }}>{product.discount}</span>
+                    <span className="badge badge-warning position-absolute" style={{ left: 12, top: 12, zIndex: 3 }}>
+                      {product.discount}</span>
                   }
+                  {/* Extra badge on Product page */}
+                  {isProductPage && product.isPopular && (
+                    <span className="badge badge-secondary position-absolute" style={{ left: 12, bottom: 12, zIndex: 3 }}>
+                      Popular
+                    </span>
+                  )}
                   {/* Wishlist */}
                   <button
                     type="button"
@@ -139,9 +174,12 @@ const NewArrivals = () => {
           ))}
         </div>
         {/* View All Button */}
-        <div className="text-center mt-4">
-          <button className="btn btn-outline-dark btn-lg px-5">VIEW ALL NEW ARRIVALS</button>
-        </div>
+        {!isProductPage && (
+          <div className="text-center mt-4">
+            <button className="btn btn-outline-dark btn-lg px-5" onClick={() => navigate('/product') } >VIEW ALL NEW ARRIVALS</button>
+          </div>
+        )}
+
       </div>
     </section>
   );

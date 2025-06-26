@@ -1,10 +1,10 @@
 import { React } from "react"
 import "./style.css"
 import MainSlider from "../../Components/Slider/MainSlider/MainSlider"
-
 import { Card } from "@mui/material"
 import ProductShowcase from "../../Components/ProductShowCase/ProductShowCase"
 import NewArrivals from "../../Components/NewArrivals/NewArrival"
+import Footer from "../../Components/Footer/Footer"
 
 function Home() {
     return (
@@ -85,7 +85,7 @@ function Home() {
                 </div>
 
                 <div>
-                    <NewArrivals />
+                    <NewArrivals limit={4}/>
                 </div>
 
                 {/* video banner section */}

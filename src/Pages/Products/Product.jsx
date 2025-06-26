@@ -1,17 +1,9 @@
 import React from "react"
 import "./product.css"
+import NewArrivals from "../../Components/NewArrivals/NewArrival";
 
 
 export default function Product() {
-
-    const products = [
-        { title: "Idli Mix", image: "/assets/idli_mix_one.png" },
-        { title: "Moong Dal Mix", image: "/assets/moong_dal_one.png" },
-        { title: "Multi Millet Dosa", image: "/assets/multi_millet_dosa_one.png" },
-        { title: "MultiGrain Dosa Calcium", image: "/assets/multigrain_dhokla_calcium_one.png" },
-        { title: "MultiGrain Dosa Protein", image: "/assets/multigrain_dhokla_protien_one.png" },
-        { title: "Oats Idli Mix", image: "/assets/oats_idli_mix_one.png" }
-    ];
 
     return (
         <>
@@ -45,28 +37,13 @@ export default function Product() {
                     </div>
                 </section>
 
-                <div className="container my-5">
-                    <div className="row justify-content-center">
-                        {products.map((product, index) => (
-                            <div key={index} className="col-md-4 col-sm-6 col-12 mb-4">
-                                <div className="card shadow-lg border-0 rounded-lg text-center">
-                                    <div className="plan-header">{product.title}</div>
-                                    <div className="card-body p-4">
-                                        <img src={product.image} alt={product.title} className="product-image" />
-                                        <button className="btn buy-now">BUY NOW</button>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                <div>
+                    <NewArrivals limit={6} isProductPage /> ;
                 </div>
-
-
-
-
             </div>
 
         </>
+
 
     )
 }

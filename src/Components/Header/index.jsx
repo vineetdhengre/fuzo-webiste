@@ -27,15 +27,6 @@ const Header = () => {
 
             <nav class="navbar navbar-expand-lg navbar-custom">
                 <div class="container-fluid">
-                    {/* <!-- Navbar Toggler Button --> */}
-                    {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> */}
-
-                    {/* <!-- Center Logo --> */}
-                    {/* <a class="navbar-brand mx-auto d-lg-none" href="#" src="/assets/logo.png"></a> */}
-
                     <div class="collapse navbar-collapse" id="navbarContent">
                         <div class="row w-100 header-custom">
                             {/* <!-- Left Side Menu --> */}
