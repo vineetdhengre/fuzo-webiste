@@ -5,20 +5,20 @@ import { Card } from "@mui/material"
 import ProductShowcase from "../../Components/ProductShowCase/ProductShowCase"
 import NewArrivals from "../../Components/NewArrivals/NewArrival"
 import Footer from "../../Components/Footer/Footer"
+import HomeSlider from "../../Components/Slider/HomeSlider"
 
 function Home() {
     return (
         <>
             <div>
-                <MainSlider />
+                <HomeSlider />
             </div>
 
             <div className="main-body">
                 <div className="container hero-section">
                     <div className="body-customHeading">
                         <h2 style={{ fontSize: "3rem" }} >
-                            Ready in Moments <br />
-                            <span className="highlight-text" style={{ fontSize: "3.4rem" }} >LOVED FOREVER </span>
+                            Why <span className="highlight-text" style={{ fontSize: "3.4rem" }} > US      </span>
                         </h2>
                     </div>
                     <div className="row align-items-center mt-1" >
@@ -63,12 +63,12 @@ function Home() {
                     </div>
                 </div>
 
-                <div>
+                {/* <div>
                     <ProductShowcase />
-                </div>
+                </div> */}
 
 
-                <div className="container-fluid text-center mt-2" style={{ padding: "0 4rem" }} >
+                {/* <div className="container-fluid text-center mt-2" style={{ padding: "0 4rem" }} >
                     <div className='info-container'>
                         <div style={{ textAlign: "left", width: "65%" }}>
                             <span className="badge-custom">Fresh Delight</span>
@@ -82,16 +82,15 @@ function Home() {
                             <p><b>FUZO</b> offers essential nutrients from 30 major ingredients, including avocado, sesame, capsicum, vegetables, and fruits.</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div>
-                    <NewArrivals limit={4}/>
+                    <NewArrivals limit={4} />
                 </div>
 
                 {/* video banner section */}
-                <div>
+                {/* <div>
                     <div className="container-fluid mt-4 pt-3">
-                        {/* <img src="assets\bowl-test.png" alt="Bowl" class="bowl-top-left" /> */}
                         <div className="hero-section-bottom">
                             <div className="tag">Fresh Choices</div>
                             <div className='gif-banner-section'>
@@ -105,7 +104,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

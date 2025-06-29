@@ -82,11 +82,11 @@ const NewArrivals = ({isProductPage = false , limit=4}) => {
   const displayedProducts = limit ? products.slice(0, limit) : products;
 
   return (
-  <section className={`py-5 ${isProductPage ? "bg-light" : ""}`}>
+  <section className={`py-4 px-2 ${isProductPage ? "bg-light" : ""}`}>
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-4">
-          <h2 className="font-weight-bold mb-2" style={{fontSize : '2.8rem'}} > {isProductPage ? "Explore Our Range" : "New Arrivals"} </h2>
+          <h2 className="font-weight-bold mb-2" style={{fontSize : '2.8rem'}} > {isProductPage ? "Explore Our Range" : "Our Products"} </h2>
           <div className="mx-auto mb-3" style={{ width: "100px", height: "4px", background: "#ccc" }}></div>
         </div>
         {/* Products Grid */}
@@ -176,7 +176,7 @@ const NewArrivals = ({isProductPage = false , limit=4}) => {
         {/* View All Button */}
         {!isProductPage && (
           <div className="text-center mt-4">
-            <button className="btn btn-outline-dark btn-lg px-5" onClick={() => navigate('/product') } >VIEW ALL NEW ARRIVALS</button>
+            <button className="btn btn-outline-dark btn-lg px-5" onClick={() => navigate('/product') } >VIEW ALL PRODUCTS</button>
           </div>
         )}
 

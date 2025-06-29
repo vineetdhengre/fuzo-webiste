@@ -3,9 +3,9 @@ import "./main_slider_style.css";
 
 export default function MainSlider() {
     const [items, setItems] = useState([
-        { img: "assets/collage-3.png", title: "IDLI", author: "PREMIXES" },
-        { img: "assets/collage-3.png", title: "DOSA", author: "PREMIXES" },
-        // { img: "assets/main_slider_images/img3.jpg", title: "OATS", author: "PREMIXES" },
+        { img: "assets/main_slider_images/slide-1.png", title: "IDLI", author: "PREMIXES" },
+        { img: "assets/main_slider_images/slide-2.png", title: "DOSA", author: "PREMIXES" },
+        { img: "assets/main_slider_images/slide-3.png", title: "OATS", author: "PREMIXES" },
         // { img: "assets/main_slider_images/img4.png", title: "DHOKLA", author: "PREMIXES" },
     ]);
 
@@ -18,7 +18,7 @@ export default function MainSlider() {
     const [isSliding, setIsSliding] = useState(false);
 
     const showSlider = (type) => {
-         if (isSliding) return; // prevent click spam
+        if (isSliding) return; // prevent click spam
         setIsSliding(true); // lock interaction
         if (!type) type = "next";
 
@@ -27,7 +27,7 @@ export default function MainSlider() {
             if (type === "next") {
                 updated.push(updated.shift());
             } else if (type === "prev") {
-            updated.unshift(updated.pop());
+                updated.unshift(updated.pop());
             }
             return updated;
         });
@@ -60,41 +60,41 @@ export default function MainSlider() {
     }, []);
 
     return (
-        <div className="main_carousel" ref={carouselRef}>
-            {/* List Items */}
-            <div className="list">
-                {items.map((item, index) => (
-                    <div className="item" key={item.title +index}>
-                        <img src={item.img} alt="slider" />
-                        <div className="content">
-                            <div className="author">{item.author}</div>
-                            <div className="title">DESIGN SLIDER</div>
-                            <div className="topic">{item.title}</div>
-                            <div className="des">{item.desc}</div>
-                            <div className="buttons">
-                                <button> ORDER NOW </button>
+        <>
+            <div className="main_carousel" ref={carouselRef}>
+
+                <div className="list">
+                    {items.map((item, index) => (
+                        <div className="item" key={item.title + index}>
+                            <img src={item.img} alt="slider" />
+                            <div className="content">
+                                {/* <div className="author">{item.author}</div>
+                                <div className="title">DESIGN SLIDER</div>
+                                <div className="topic">{item.title}</div>
+                                <div className="des">{item.desc}</div>
+                                <div className="buttons">
+                                    <button> ORDER NOW </button>
+                                </div> */}
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
+
+
+
+                <div className="arrows">
+                    <button onClick={() => showSlider("prev")}>&lt;</button>
+                    <button onClick={() => showSlider("next")}>&gt;</button>
+                </div>
+
+                <div className="time" />
             </div>
-
-
-
-            {/* Navigation */}
-            <div className="arrows">
-                <button onClick={() => showSlider("prev")}>&lt;</button>
-                <button onClick={() => showSlider("next")}>&gt;</button>
-            </div>
-
-            {/* Timer Indicator */}
-            <div className="time" />
-        </div>
+        </>
     );
 }
 
-    // const [thumbnails, setThumbnails] = useState([...items]);
 
+// const [thumbnails, setThumbnails] = useState([...items]);
 
 // setThumbnails((prev) => {
 //     let updated = [...prev];
@@ -107,16 +107,16 @@ export default function MainSlider() {
 // });
 
 
-{/* Thumbnail List */ }
-{/* <div className="thumbnail">
-                {thumbnails.map((thumb, index) => (
-                    <div className="item" key={index}>
-                        <img src={thumb.img} alt="thumbnail" />
-                        <div className="content">
-                            <div className="description"> Title </div>
-                        </div>
-                    </div>
-                ))}
-            </div> */}
+
+// {/* <div className="thumbnail">
+//                 {thumbnails.map((thumb, index) => (
+//                     <div className="item" key={index}>
+//                         <img src={thumb.img} alt="thumbnail" />
+//                         <div className="content">
+//                             <div className="description"> Title </div>
+//                         </div>
+//                     </div>
+//                 ))}
+//             </div> */}
 
 
