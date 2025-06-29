@@ -21,7 +21,7 @@ function Home() {
                             Why <span className="highlight-text" style={{ fontSize: "3.4rem" }} > US      </span>
                         </h2>
                     </div>
-                    <div className="row align-items-center mt-1" >
+                    {/* <div className="row align-items-center mt-1" >
 
                         <div className="col-md-3" >
                             <div className="feature">
@@ -60,7 +60,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* <div>

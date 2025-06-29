@@ -55,7 +55,7 @@ const Header = () => {
                                         <a class="btn order-btn" href="#">SIGN IN/UP</a>
                                     </li>
                                     <CiShoppingCart className='cart-trolley' />
-                                    <span className='cart-total-items'>10</span>
+                                    {/* <span className='cart-total-items'>10</span> */}
                                     {/* <li class="nav-item"><a class="nav-link" href="#">SIGN IN/UP</a></li> */}
                                 </ul>
                             </div>
