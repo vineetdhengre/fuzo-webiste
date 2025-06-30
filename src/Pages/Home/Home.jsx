@@ -15,11 +15,15 @@ function Home() {
             </div>
 
             <div className="main-body">
-                <div className="container hero-section">
+                <div className="container-fluid hero-section">
                     <div className="body-customHeading">
                         <h2 style={{ fontSize: "3rem" }} >
                             Why <span className="highlight-text" style={{ fontSize: "3.4rem" }} > US      </span>
                         </h2>
+                        
+                    </div>
+                    <div>
+                        <img src="assets/why-us.png" alt="" srcset="" style={{ width: "100%", height: "auto" }} />
                     </div>
                     {/* <div className="row align-items-center mt-1" >
 

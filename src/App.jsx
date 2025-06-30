@@ -27,10 +27,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product/" element={<Product />} />
-            <Route path="/about-us" element={<About/>} />
-            <Route path="/delivery" element={<ComingSoon/>} />
-            <Route path="/recipes" element={<ComingSoon/>} />
-            <Route path="/offers" element={<ComingSoon/>} /> 
+            <Route path="/about-us" element={<ComingSoon/>} />
+            <Route path="/gifting" element={<ComingSoon/>} />
+            <Route path="/bulk-orders" element={<ComingSoon/>} />
             <Route path="/contactUs" element={<Contact />}/> 
             <Route path="/single-product/:id" element={<singleProduct />} />
             <Route path="*" element={<Error />} />

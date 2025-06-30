@@ -16,74 +16,90 @@ const NewArrivals = ({isProductPage = false , limit=4}) => {
   };
 
   const products = [
-    {
+     {
       id: 1,
-      title: "RICE IDLI MIX",
-      price: 189,
-      originalPrice: 279,
-      discount: "6% OFF",
-      additionalInfo: "Bestsellers",
-      image: "/assets/idli_mix_one.png",
+      title: "Best Seller Trial Pack",
+      price: 249,
+      originalPrice: 830,
+      size: "1250gm",
+      discount: "30% OFF",
+      // additionalInfo: "Bestsellers",
+      image: "/assets/bestseller.png",
       background: "bg-danger",
       isPopular: true
     },
     {
       id: 2,
-      title: "MULTIGRAIN DHOKLA DHOKLA MIX",
-      price: 299,
+      title: "Rice Idli Mix",
+      price: 125,
+      // originalPrice: 279,
+      size: "250gm",
+      // discount: "6% OFF",
+      // additionalInfo: "Bestsellers",
+      image: "/assets/idli_mix_one.png",
+      background: "bg-danger",
+      isPopular: false
+    },
+    {
+      id: 3,
+      title: "Multigrain Dhokla Calcium Mix",
+      price: 125,
       size: "200gm",
       image: "/assets/multigrain_dhokla_calcium_one.png",
       background: "bg-warning",
       isPopular: false
     },
     {
-      id: 3,
-      title: "MULTI GRAIN DHOKLA MIX",
-      price: 299,
-      
-      additionalInfo: "Bestsellers",
+      id: 4,
+      title: "Multigrain Dhokla Protein Mix",
+      price: 160,
+      size: "200gm",
+      // additionalInfo: "Bestsellers",
       image: "/assets/multigrain_dhokla_protien_one.png",
       background: "bg-primary",
       isPopular: false
     },
     {
-      id: 4,
-      title: "OATS IDLI MIX",
-      price: 199,
-      originalPrice: 299,
-      discount: "16% OFF",
+      id: 5,
+      title: "Oats Idli Mix",
+      price: 140,
+      // originalPrice: 299,
+      // discount: "16% OFF",
       size: "200gm",
-      additionalInfo: "",
+      // additionalInfo: "",
       image: "/assets/moong_dal_one.png",
       background: "bg-success",
-      isPopular: true
-    },
-    {
-      id: 5,
-      title: "MOONG DAL DOSA MIX",
-      price: 159,
-      discount: "10% OFF",
-      size: "250gm",
-      image: "/assets/moong_dal_one.png",
-      background: "bg-info",
-      isPopular: true
+      isPopular: false
     },
     {
       id: 6,
-      title: "MULTI MILLET DOSA MIX",
-      price: 179,
-      additionalInfo: "High Fiber",
+      title: "Moong Dal Dosa Mix",
+      price: 145,
+      // discount: "10% OFF",
+      size: "200gm",
+      image: "/assets/moong_dal_one.png",
+      background: "bg-info",
+      isPopular: false
+    },
+    {
+      id: 7,
+      title: "Multi Millet Dosa Mix",
+      price: 135,
+      size: "200gm",
+      // additionalInfo: "High Fiber",
       image: "/assets/multi_millet_dosa_one.png",
       background: "bg-secondary",
       isPopular: false
       
     }
   ];
-  const displayedProducts = limit ? products.slice(0, limit) : products;
+  // const displayedProducts = limit ? products.slice(0, limit) : products;
+  const displayedProducts = isProductPage ? products : products.slice(0, limit);
+
 
   return (
-  <section className={`py-4 px-2 ${isProductPage ? "bg-light" : ""}`}>
-      <div className="container">
+  <section className={`py-5 px-2 ${isProductPage ? "bg-light" : ""}` }  >
+      <div className="container quicksand-font">
         {/* Section Header */}
         <div className="text-center mb-4">
           <h2 className="font-weight-bold mb-2" style={{fontSize : '2.8rem'}} > {isProductPage ? "Explore Our Range" : "Our Products"} </h2>

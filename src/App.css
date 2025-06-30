@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Madimi+One&family=Poppins:ital,wght@0,400;0,500;0,700;1,500;1,700&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
 
 
 *{
@@ -8,8 +8,16 @@
   padding: 0px;
 }
 
+.outfit-font{
+  font-family: "Outfit", sans-serif;
+}
+.quicksand-font{
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
 body{
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: #FDEFE0;
 }
 
@@ -23,7 +31,6 @@ body{
 
 
 .body-customHeading{
-  font-family: "Ancizar Sans", sans-serif;
   font-optical-sizing: auto;
   margin: auto;
   width: 70%;
@@ -92,6 +99,24 @@ body{
     padding: 20px;
     border-radius: 10px;
   }
+
+.carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #ecd8d8;       /* Customize color */
+  opacity: 1;                   /* Make sure it's not transparent */
+  border: none;                 /* Optional: remove default border */
+  transition: background-color 0.3s ease;
+  border: 1px solid #504b4b;
+}
+
+.carousel-indicators .active {
+  background-color: #ff6600;    /* Active dot color */
+}
+
+ 
 
 
 

@@ -1,31 +1,28 @@
 /* Custom Navbar */
 
-.header-custom {
-    display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-}
-
 .navbar-custom {
     padding: 15px 0;
+    
 }
 
-.navbar-brand {
+/* .navbar-brand {
     font-weight: bold;
     font-size: 24px;
     color: #3D2601;
     text-transform: uppercase;
-}
+} */
 
 .navbar-brand img{
-    width: 120px;
+    width: 160px;
+    height: auto;
 }
 
 .navbar-nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
 }
 
 .navbar-nav .nav-item {
@@ -33,7 +30,6 @@
 }
 
 .nav-link {
-    font-weight: bold;
     color: black !important;
     text-transform: uppercase;
 }
@@ -42,9 +38,9 @@
 .order-btn {
     border: 2px solid black;
     padding: 5px 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: black;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 14px;
 }
 
