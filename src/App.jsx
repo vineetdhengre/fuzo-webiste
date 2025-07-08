@@ -14,7 +14,7 @@ import ComingSoon from './Pages/ComingSoon/ComingSoon';
 import Contact from "./Pages/Contact/Contact"
 import About from './Pages/About';
 import Footer from './Components/Footer/Footer';
-import AuthForm from './Components/Form/Authform';
+import AuthForm from './Components/AuthForm/AuthForm';
 
 function App() {
   const [count, setCount] = useState(0)
