@@ -42,7 +42,7 @@ const Header = () => {
             <li className="nav-item"><a className="nav-link" href="/bulk-orders">BULK ORDERS</a></li>
             <li className="nav-item"><a className="nav-link" href="/contactUs">CONTACT US</a></li>
             <li className="nav-item">
-              <a className="btn order-btn" href="#">SIGN IN/UP</a>
+              <a className="btn order-btn" href="/signIn">SIGN IN/UP</a>
             </li>
             <li className="nav-item">
               <CiShoppingCart className="cart-trolley ms-3" size={24} />

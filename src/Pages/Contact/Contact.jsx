@@ -30,12 +30,12 @@ const Contact = () => {
                     </p>
 
                     <div className="contact-item">
-                      <div className="contact-icon">
+                      <div className="contact-icon" style={{ width: '50%' }} >
                         <i className="fas fa-map-marker-alt"></i>
                       </div>
                       <div>
                         <h6 className="mb-0">Address</h6>
-                        <p className="mb-0">Shop No 123, Borivali, Maharashtra</p>
+                        <p className="mb-0">1, Gr Ujagar Chambers, Sunder Baug Lane, MBPT Colony, Deonar, Chembur, Mumbai, Maharashtra 400088</p>
                       </div>
                     </div>
 
@@ -45,7 +45,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h6 className="mb-0">Phone</h6>
-                        <p className="mb-0">+91-123456789</p>
+                        <p className="mb-0"> +912267705210</p>
                       </div>
                     </div>
 

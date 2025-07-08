@@ -14,6 +14,7 @@ import ComingSoon from './Pages/ComingSoon/ComingSoon';
 import Contact from "./Pages/Contact/Contact"
 import About from './Pages/About';
 import Footer from './Components/Footer/Footer';
+import AuthForm from './Components/Form/Authform';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,10 +28,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product/" element={<Product />} />
-            <Route path="/about-us" element={<ComingSoon/>} />
+            <Route path="/about-us" element={<About/>} />
             <Route path="/gifting" element={<ComingSoon/>} />
             <Route path="/bulk-orders" element={<ComingSoon/>} />
             <Route path="/contactUs" element={<Contact />}/> 
+            <Route path="/signIn" element={<AuthForm />}/> 
             <Route path="/single-product/:id" element={<singleProduct />} />
             <Route path="*" element={<Error />} />
             <Route path="/thankyou" element={<Thankyou/>} />
