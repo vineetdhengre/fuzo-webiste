@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './form_style.css'
 
-export default function AuthForm() {
+export default function authForm() {
   const [isLogin, setIsLogin] = useState(true);
   return (
     <>
