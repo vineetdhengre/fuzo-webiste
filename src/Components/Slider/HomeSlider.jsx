@@ -11,7 +11,7 @@ export default function MainSlider() {
         <a href="/gifting" target = "_blank"> 
             <img
           className="d-block w-100"
-          src="/assets/main_slider_images/slide-1.png"
+          src="/assets/main_slider_images/test-1.png"
           alt="First slide"
         />
         </a>
@@ -21,7 +21,7 @@ export default function MainSlider() {
         <a href="/product" target = "_blank"> 
             <img
           className="d-block w-100"
-          src="/assets/main_slider_images/slide-2.png"
+          src="/assets/main_slider_images/test-2.png"
           alt="Second slide"
         />
         </a>
