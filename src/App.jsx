@@ -14,6 +14,7 @@ import ComingSoon from './Pages/ComingSoon/ComingSoon';
 import Contact from "./Pages/Contact/Contact"
 import About from './Pages/About';
 import Footer from './Components/Footer/Footer';
+import AuthForm from './Components/Form';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +32,7 @@ function App() {
             <Route path="/gifting" element={<ComingSoon/>} />
             <Route path="/bulk-orders" element={<ComingSoon/>} />
             <Route path="/contactUs" element={<Contact />}/> 
+            <Route path ="/signIn" element={<AuthForm />} />
             {/* <Route path="/signIn" element={<AuthForm />}/>  */}
             <Route path="/single-product/:id" element={<singleProduct />} />
             <Route path="*" element={<Error />} />
