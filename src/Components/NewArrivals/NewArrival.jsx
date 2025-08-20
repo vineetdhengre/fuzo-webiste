@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import Home from '../../Pages/Home/Home';
+import Home from '../../Pages/Home/Home'; 
+import { useCart } from '../../Pages/Cart/CartContext'; 
+
 
 const NewArrivals = ({isProductPage = false , limit=4}) => {
   const navigate = useNavigate();
@@ -95,8 +97,8 @@ const NewArrivals = ({isProductPage = false , limit=4}) => {
   ];
   // const displayedProducts = limit ? products.slice(0, limit) : products;
   const displayedProducts = isProductPage ? products : products.slice(0, limit);
-
-
+  const { addToCart } = useCart();
+  
   return (
   <section className={`py-5 px-2 ${isProductPage ? "bg-light" : ""}` }  >
       <div className="container quicksand-font">
@@ -183,7 +185,10 @@ const NewArrivals = ({isProductPage = false , limit=4}) => {
                       </div>
                     </div>
                   </div>
-                  <button className="btn btn-success btn-block mt-3 font-weight-bold">ADD TO CART</button>
+                  <button className="btn btn-success btn-block mt-3 font-weight-bold"
+                    // onClick={addToCart}
+                     onClick={() => addToCart(product)}
+                  >ADD TO CART</button>
                 </div>
               </div>
             </div>

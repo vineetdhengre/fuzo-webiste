@@ -1,8 +1,12 @@
 import React from 'react';
 import './style.css';
 import { CiShoppingCart } from 'react-icons/ci';
-
+import { useCart } from '../../Pages/Cart/CartContext';
+import { useNavigate } from 'react-router-dom';   // new code till
 const Header = () => {
+  const { cartItems } = useCart();
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar navbar-expand-lg navbar-custom ">
       <div className="container-fluid">
@@ -44,9 +48,25 @@ const Header = () => {
             <li className="nav-item">
               <a className="btn order-btn" href="/signIn">SIGN IN/UP</a>
             </li>
-            <li className="nav-item">
+
+            <li className="nav-item position-relative" onClick={() => navigate('/cart')} style={{ cursor: 'pointer' }}>
               <CiShoppingCart className="cart-trolley ms-3" size={24} />
+              {cartItems.length > 0 && (
+                <span
+                  style={{
+                    position: 'absolute',
+                    background: '#dc2d2d',
+                    color: 'white',
+                    borderRadius: '50%',
+                    padding: '3px 7px',
+                    fontSize: '13px',
+                  }}
+                >
+                  {cartItems.length}
+                </span>
+              )}
             </li>
+
           </ul>
         </div>
       </div>
@@ -55,3 +75,24 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+{/* <li className="nav-item position-relative">
+        <CiShoppingCart className="cart-trolley ms-3" size={24} />
+        {cartCount > 0 && (
+          <span
+            style={{
+              position: 'absolute',
+              background: '#dc2d2d',
+              color: 'white',
+              borderRadius: '50%',
+              padding: '3px 7px',
+              fontSize: '13px',
+            }}
+          >
+            {cartCount}
+          </span>
+        )}
+      </li> */}

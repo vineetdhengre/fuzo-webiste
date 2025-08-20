@@ -47,6 +47,11 @@
   flex-direction: column;
 }
 
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
 .form h2 {
   margin-bottom: 20px;
 }
