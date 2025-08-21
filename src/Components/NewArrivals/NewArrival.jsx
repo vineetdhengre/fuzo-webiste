@@ -3,101 +3,105 @@ import { Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Home from '../../Pages/Home/Home'; 
 import { useCart } from '../../Pages/Cart/CartContext'; 
+import { useAuth } from '../../Pages/Cart/AuthContext';
 
 
 const NewArrivals = ({isProductPage = false , limit=4}) => {
-  const navigate = useNavigate();
-  const [wishlistedItems, setWishlistedItems] = useState([]);
+    const { addToCart } = useCart();
+    const navigate = useNavigate();
+    const { isLoggedIn } = useAuth();
 
-  const toggleWishlist = (productId) => {
-    setWishlistedItems(prev =>
-      prev.includes(productId)
-        ? prev.filter(id => id !== productId)
-        : [...prev, productId]
-    );
-  };
+    const [wishlistedItems, setWishlistedItems] = useState([]);
 
-  const products = [
-     {
-      id: 1,
-      title: "Best Seller Trial Pack",
-      price: 249,
-      originalPrice: 830,
-      size: "1250gm",
-      discount: "30% OFF",
-      // additionalInfo: "Bestsellers",
-      image: "/assets/bestseller.png",
-      background: "bg-danger",
-      isPopular: true
-    },
-    {
-      id: 2,
-      title: "Rice Idli Mix",
-      price: 125,
-      // originalPrice: 279,
-      size: "250gm",
-      // discount: "6% OFF",
-      // additionalInfo: "Bestsellers",
-      image: "/assets/idli_mix_one.png",
-      background: "bg-danger",
-      isPopular: false
-    },
-    {
-      id: 3,
-      title: "Multigrain Dhokla Calcium Mix",
-      price: 125,
-      size: "200gm",
-      image: "/assets/multigrain_dhokla_calcium_one.png",
-      background: "bg-warning",
-      isPopular: false
-    },
-    {
-      id: 4,
-      title: "Multigrain Dhokla Protein Mix",
-      price: 160,
-      size: "200gm",
-      // additionalInfo: "Bestsellers",
-      image: "/assets/multigrain_dhokla_protien_one.png",
-      background: "bg-primary",
-      isPopular: false
-    },
-    {
-      id: 5,
-      title: "Oats Idli Mix",
-      price: 140,
-      // originalPrice: 299,
-      // discount: "16% OFF",
-      size: "200gm",
-      // additionalInfo: "",
-      image: "/assets/moong_dal_one.png",
-      background: "bg-success",
-      isPopular: false
-    },
-    {
-      id: 6,
-      title: "Moong Dal Dosa Mix",
-      price: 145,
-      // discount: "10% OFF",
-      size: "200gm",
-      image: "/assets/moong_dal_one.png",
-      background: "bg-info",
-      isPopular: false
-    },
-    {
-      id: 7,
-      title: "Multi Millet Dosa Mix",
-      price: 135,
-      size: "200gm",
-      // additionalInfo: "High Fiber",
-      image: "/assets/multi_millet_dosa_one.png",
-      background: "bg-secondary",
-      isPopular: false
-      
-    }
-  ];
-  // const displayedProducts = limit ? products.slice(0, limit) : products;
-  const displayedProducts = isProductPage ? products : products.slice(0, limit);
-  const { addToCart } = useCart();
+    const toggleWishlist = (productId) => {
+      setWishlistedItems(prev =>
+        prev.includes(productId)
+          ? prev.filter(id => id !== productId)
+          : [...prev, productId]
+      );
+    };
+
+    const products = [
+      {
+        id: 1,
+        title: "Best Seller Trial Pack",
+        price: 249,
+        originalPrice: 830,
+        size: "1250gm",
+        discount: "30% OFF",
+        // additionalInfo: "Bestsellers",
+        image: "/assets/bestseller.png",
+        background: "bg-danger",
+        isPopular: true
+      },
+      {
+        id: 2,
+        title: "Rice Idli Mix",
+        price: 125,
+        // originalPrice: 279,
+        size: "250gm",
+        // discount: "6% OFF",
+        // additionalInfo: "Bestsellers",
+        image: "/assets/idli_mix_one.png",
+        background: "bg-danger",
+        isPopular: false
+      },
+      {
+        id: 3,
+        title: "Multigrain Dhokla Calcium Mix",
+        price: 125,
+        size: "200gm",
+        image: "/assets/multigrain_dhokla_calcium_one.png",
+        background: "bg-warning",
+        isPopular: false
+      },
+      {
+        id: 4,
+        title: "Multigrain Dhokla Protein Mix",
+        price: 160,
+        size: "200gm",
+        // additionalInfo: "Bestsellers",
+        image: "/assets/multigrain_dhokla_protien_one.png",
+        background: "bg-primary",
+        isPopular: false
+      },
+      {
+        id: 5,
+        title: "Oats Idli Mix",
+        price: 140,
+        // originalPrice: 299,
+        // discount: "16% OFF",
+        size: "200gm",
+        // additionalInfo: "",
+        image: "/assets/moong_dal_one.png",
+        background: "bg-success",
+        isPopular: false
+      },
+      {
+        id: 6,
+        title: "Moong Dal Dosa Mix",
+        price: 145,
+        // discount: "10% OFF",
+        size: "200gm",
+        image: "/assets/moong_dal_one.png",
+        background: "bg-info",
+        isPopular: false
+      },
+      {
+        id: 7,
+        title: "Multi Millet Dosa Mix",
+        price: 135,
+        size: "200gm",
+        // additionalInfo: "High Fiber",
+        image: "/assets/multi_millet_dosa_one.png",
+        background: "bg-secondary",
+        isPopular: false
+        
+      }
+    ];
+    // const displayedProducts = limit ? products.slice(0, limit) : products;
+    const displayedProducts = isProductPage ? products : products.slice(0, limit);
+ 
   
   return (
   <section className={`py-5 px-2 ${isProductPage ? "bg-light" : ""}` }  >
@@ -186,8 +190,14 @@ const NewArrivals = ({isProductPage = false , limit=4}) => {
                     </div>
                   </div>
                   <button className="btn btn-success btn-block mt-3 font-weight-bold"
-                    // onClick={addToCart}
-                     onClick={() => addToCart(product)}
+                     onClick={() => {
+                      if (!isLoggedIn) {
+                        alert("Please log in to add products to cart.");
+                        navigate('/signIn'); // Redirect to login page
+                        return;
+                      }
+                      addToCart(product);
+                    }}
                   >ADD TO CART</button>
                 </div>
               </div>

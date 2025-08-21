@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './form_style.css'
+import { useAuth } from '../../Pages/Cart/AuthContext';
 
 export default function AuthForm() {
   const [isLogin, setIsLogin] = useState(true);
@@ -9,6 +10,7 @@ export default function AuthForm() {
   const [confirmPass, setConfirmPass] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const { setIsLoggedIn } = useAuth(); 
 
   // Get stored users or empty array if none
   const getStoredUsers = () => {
@@ -47,6 +49,7 @@ export default function AuthForm() {
     saveUsers(users);
     setError('');
     navigate('/');
+    setIsLoggedIn(true);
   };
 
   // Handle Login
@@ -61,6 +64,7 @@ export default function AuthForm() {
     if (user) {
       setError('');
       navigate('/');
+      setIsLoggedIn(true);
     } else {
       setError('Invalid credentials.');
     }

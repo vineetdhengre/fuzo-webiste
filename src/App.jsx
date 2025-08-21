@@ -18,6 +18,7 @@ import Footer from './Components/Footer/Footer';
 import AuthForm from './Components/Form';
 import { CartProvider } from './Pages/Cart/CartContext'; // Import the CartProvider
 import CartPage from './Pages/Cart/CartPage'; // Import the CartPage component
+import { AuthProvider } from './Pages/Cart/AuthContext';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,11 +26,11 @@ function App() {
   return (
     <>
       <div>
+         <BrowserRouter>
+        <AuthProvider>
         <CartProvider>
-          
-          <BrowserRouter>
+         
             <Header />
-
             <Routes>
               {/* Home page */}
               <Route path="/" element={<Home />} />
@@ -61,10 +62,11 @@ function App() {
               {/* Error/404 page - wildcard route */}
               <Route path="*" element={<Error />} />
             </Routes>
-
             <Footer />
-          </BrowserRouter>
+         
         </CartProvider>
+        </AuthProvider>
+         </BrowserRouter>
       </div>
     </>
   );
